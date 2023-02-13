@@ -5,17 +5,17 @@ namespace code_retreat;
 public class TicTacToeTests
 {
     [Fact]
-    public void x()
+    public void ShouldReturnTrue_WhenAllItemsInRowAreEqual()
     {
         var game = new TicTacToe();
-        game.AllItemsInRowAreEquasl();
+        game.AllItemsInRowAreEqual();
         Assert.True(game.HasWinner);
     }
 }
 
 public class TicTacToe
 {
-    public void AllItemsInRowAreEquasl()
+    public void AllItemsInRowAreEqual()
     {
         HasWinner = true;
     }
