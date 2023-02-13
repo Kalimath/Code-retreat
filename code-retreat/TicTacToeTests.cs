@@ -25,6 +25,13 @@ public class TicTacToeTests
         game.AllItemsInDiagonalAreEqual();
         Assert.True(game.HasWinner);
     }
+
+    [Fact]
+    public void ShoudlReturnFalse_WhenNewGame()
+    {
+        var game = new TicTacToe(); 
+        Assert.False(game.HasWinner);
+    }
     
 }
 
