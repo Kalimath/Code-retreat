@@ -27,7 +27,7 @@ public class TicTacToeTests
     }
 
     [Fact]
-    public void ShoudlReturnFalse_WhenNewGame()
+    public void ShouldReturnFalse_WhenNewGame()
     {
         var game = new TicTacToe(); 
         Assert.False(game.HasWinner);
